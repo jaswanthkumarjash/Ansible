@@ -10,9 +10,9 @@
     - LIST2_VALUE1
     - LIST2_VALUE2
     - LIST2_VALUE3
-    DICTIONARY1: {"KEY1":"D1_V1", "KEY2":"D2_V2"}
+    DICTIONARY1: {"KEY1":"D1_V1", "KEY2":"D1_V2"}
     DICTIONARY2:
-      KEY1: "D1_V1"
+      KEY1: "D2_V1"
       KEY2: "D2_V2"
   tasks:
   - name: All datatypes
