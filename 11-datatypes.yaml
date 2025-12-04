@@ -17,4 +17,6 @@
   tasks:
   - name: All datatypes
     ansible.builtin.debug:
-      msg: "String is {{ STRING }}, Integer is {{ INTEGER }}, Boolean is {{ BOOLEAN }}, List1 is {{ LIST1 }}, List2 is {{ LIST2 }}, Dictionary1 is {{ DICTIONARY1 }}, Dictionary2 is {{ DICTIONARY2 }}"
+      msg: 
+        - "String is {{ STRING }}, Integer is {{ INTEGER }}, Boolean is {{ BOOLEAN }}, List1 is {{ LIST1 }}, List2 is {{ LIST2 }}, Dictionary1 is {{ DICTIONARY1 }}, Dictionary2 is {{ DICTIONARY2 }}"
+        - "Dictionary1 key1 is {{ DICTIONARY1.KEY1 }}, Dictionary1 key2 is {{ DICTIONARY1.KEY2 }}, Dictionary2 key1 is {{ DICTIONARY2.KEY1 }}, Dictionary2 key2 is {{ DICTIONARY2.KEY2 }}"
