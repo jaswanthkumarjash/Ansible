@@ -19,4 +19,6 @@
     ansible.builtin.debug:
       msg: 
       - "String is {{ STRING }}, Integer is {{ INTEGER }}, Boolean is {{ BOOLEAN }}, List1 is {{ LIST1 }}, List2 is {{ LIST2 }}, Dictionary1 is {{ DICTIONARY1 }}, Dictionary2 is {{ DICTIONARY2 }}"
+      - "List1 value1 is {{ LIST1[0] }}, List1 value2 is {{ LIST1[1] }}, List1 value3 is {{ LIST1[2] }}"
+      - "List2 value1 is {{ LIST2[0] }}, List2 value2 is {{ LIST2[1] }}, List2 value3 is {{ LIST2[2] }}"
       - "Dictionary1 key1 is {{ DICTIONARY1.KEY1 }}, Dictionary1 key2 is {{ DICTIONARY1.KEY2 }}, Dictionary2 key1 is {{ DICTIONARY2.KEY1 }}, Dictionary2 key2 is {{ DICTIONARY2.KEY2 }}"
