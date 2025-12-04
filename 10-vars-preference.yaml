@@ -3,8 +3,8 @@
   connection: local
   # vars_files:
   # - course.yaml
-  vars: 
-    COURSE: PL Var
+  # vars: 
+  #   COURSE: PL Var
   # vars_prompt:
   # - name: COURSE
   #   prompt: "Enter the var val : "
