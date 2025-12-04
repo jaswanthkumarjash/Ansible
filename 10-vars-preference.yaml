@@ -15,3 +15,5 @@
     vars:
     - name: Task level Var
       COURSE: TL Var
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }}"
