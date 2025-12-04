@@ -1,17 +1,17 @@
 - name: Variable preferences
   hosts: local
   connection: local
-  # vars_files:
-  # - course.yaml
-  # vars: 
-  #   COURSE: PL Var
-  # vars_prompt:
-  # - name: COURSE
-  #   prompt: "Enter the var val : "
-  #   private: false 
+  vars_files:
+  - course.yaml
+  vars: 
+    COURSE: PL Var
+  vars_prompt:
+  - name: COURSE
+    prompt: "Enter the var val : "
+    private: false 
   tasks:
   - name: Checking Var level
-    # vars:
-    #   COURSE: TL Var
+    vars:
+      COURSE: TL Var
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}"
