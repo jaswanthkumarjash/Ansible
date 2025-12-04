@@ -1,8 +1,8 @@
 - name: Variable preferences
   hosts: local
   connection: local
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars: 
     COURSE: PL Var
   vars_prompt:
