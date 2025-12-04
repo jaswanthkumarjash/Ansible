@@ -5,10 +5,10 @@
   # - course.yaml
   vars: 
     COURSE: PL Var
-  vars_prompt:
-  - name: COURSE
-    prompt: "Enter the var val : "
-    private: false 
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: "Enter the var val : "
+  #   private: false 
   tasks:
   - name: Checking Var level
     # vars:
