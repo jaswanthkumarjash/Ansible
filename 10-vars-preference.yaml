@@ -1,0 +1,17 @@
+- name: Variable preferences
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml
+  vars: 
+  - name: Inside play level
+    COURSE: PL Var
+  vars_prompt:
+    name: COURSE
+    prompt: "Enter the var val : "
+    private: false 
+  tasks:
+  - name: Inside task level
+    vars:
+    - name: Task level Var
+      COURSE: TL Var
