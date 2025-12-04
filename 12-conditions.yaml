@@ -1,0 +1,10 @@
+- name: Conditional statements
+  hosts: local 
+  connection: local
+  vars:
+    num: 5
+  tasks:
+  - name: Checking number greater than 10 or not
+    ansible.builtin.debug:
+      msg: "The number is greater than 10"
+    when: num > 10
