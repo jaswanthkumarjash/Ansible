@@ -1,0 +1,20 @@
+- name: Datatype of Variables
+  hosts: local
+  connection: local
+  vars:
+    STRING: JASWANTH
+    INTEGER: 10
+    BOOLEAN: true
+    LIST1: ["LIST1_Value1", "LIST1_Value2", "LIST1_Value3"]
+    LIST2:
+    - LIST2_VALUE1
+    - LIST2_VALUE2
+    - LIST2_VALUE3
+    DICTIONARY1: {"KEY1":"V1", "KEY2":"V2"}
+    DICTIONARY2:
+      KEY1: "V1"
+      KEY2: "V2"
+  tasks:
+  - name: All datatypes
+    ansible.builtin.debug:
+      msg: "String is {{ STRING }}, Integer is {{ INTEGER }}, Boolean is {{ BOOLEAN }}, List1 is {{ LIST1 }}, List2 is {{ LIST2 }}, Dictionary1 is {{ DICTIONARY1 }}, Dictionary2 is {{ DICTIONARY2 }}"
