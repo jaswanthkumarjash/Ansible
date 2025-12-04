@@ -10,8 +10,8 @@
     prompt: "Enter the var val : "
     private: false 
   tasks:
-  - name: Inside task level
-    vars:
-      COURSE: TL Var
+  - name: Checking Var level
+    # vars:
+    #   COURSE: TL Var
     ansible.builtin.debug:
       msg: "Course is {{ COURSE }}"
