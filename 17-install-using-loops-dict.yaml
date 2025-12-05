@@ -1,6 +1,7 @@
 - name: Uninstalling packages using Dictionary
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: Uninstall packages
     ansible.builtin.package:
