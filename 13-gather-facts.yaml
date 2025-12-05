@@ -1,8 +1,7 @@
-- name: gather facts
+- name: Gathering facts
   hosts: local
   connection: local
-  # ansible collects the info of target server, before it executes any other fact
   tasks:
-  - name: facts
+  - name: Print OS facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
