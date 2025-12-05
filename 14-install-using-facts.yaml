@@ -1,6 +1,7 @@
 - name: Install using facts
   hosts: local
   connection: local
+  become: yes
   tasks: 
   - name: Install nginx for RHEL
     ansible.builtin.package:
