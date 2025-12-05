@@ -1,0 +1,27 @@
+- name: Install using facts
+  hosts: local
+  connection: local
+  tasks: 
+  - name: Install nginx for RHEL
+    ansible.builtin.package:
+      name: nginx
+      state: latest
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+    ansible.builtin.debug:
+      msg: "NGINX installed, service started and enabled successfully for RHEL."
+    when: ansible_os_family == "RedHat"
+
+  - name: Install nginx for UBUNTU
+    ansible.builtin.package:
+      name: nginx
+      state: latest
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
+    ansible.builtin.debug:
+      msg: "NGINX installed, service started and enabled successfully for DEBIAN."
+    when: ansible_os_family == "Debian"
